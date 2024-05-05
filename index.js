@@ -40,7 +40,7 @@ app.post("/admin/product/add", async (req, res) => {
       res.json("Please Enter product full details");
     }
   } catch (error) {
-    res.json("Please Enter detail care fully or change product ID");
+    res.json(error);
   }
 });
 
